@@ -10,9 +10,10 @@
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
+  font-size: @scale * 1em;
   text-decoration: inherit;
   -webkit-font-smoothing: antialiased;
-  *margin-right: .3em; // fixes ie7 issues
+  *margin-right: @scale * .3em; // fixes ie7 issues
 }
 
 .border-radius(@radius) {
@@ -21,7 +22,7 @@
   border-radius: @radius;
 }
 
-.icon-stack(@width: 2em, @height: 2em, @top-font-size: 1em, @base-font-size: 2em) {
+.icon-stack(@width: @scale * 2em, @height: @scale * 2em, @top-font-size: @scale * 1em, @base-font-size: @scale * 2em) {
   .icon-stack {
     position: relative;
     display: inline-block;
